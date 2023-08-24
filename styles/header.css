@@ -3,6 +3,8 @@
     height: 24px;
     background-image: url("../img/Menu.svg");
     display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
 }
  
 .cabeçalho{
@@ -26,6 +28,7 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container__botao:checked ~.lista-menu{
@@ -35,8 +38,22 @@
 .lista-menu_titulo, .lista-menu_item{
     padding: 1em;
     background-color: var(--branco);
+    font-family: var(--fonte-principal);
 }
 
 .lista-menu_titulo{
     color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu_link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.conttainer_botao{
+    display: none;
 }
